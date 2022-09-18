@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box;}
+
+body { 
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color:#282e34;
+}
+
+#navbar {
+  overflow: hidden;
+  background-color: #060606;
+  padding: 30px 10px;
+  transition: 0.4s;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 99;
+ 
+}
+
+#navbar a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+  opacity: 1;
+}
+
+#navbar #logoimg {
+  width: 250px;
+  font-weight: bold;
+  transition: 0.4s;
+}
+
+#navbar a:hover {
+  background-color: #D05151;
+  color: white;
+}
+
+#navbar a.active {
+  background-color: #CE3434;
+  color: white;
+}
+
+#navbar-right {
+  float: right;
+}
+.section-dark{
+  background-color:#282e34;
+  color:#ddd;
+	text-align: center;
+}
+.section h1{
+background-color:grey;
+margin-left:300px;
+margin-right:300px;
+}
+
+.section h2{
+background-color:grey;
+margin-left:300px;
+margin-right:300px;
+}
+.section p{
+text-align:center;
+margin-left:300px;
+margin-right:300px;
+
+
+}
+
+#img{
+padding:20px;
+  }
+  
+  #img:hover {
+  box-shadow: 0 0 4px 2px #D05151;
+}
+
+#img2{
+padding:20px;
+ transition: transform .2s;
+  box-shadow: 0 0 4px 2px grey;
+  }
+  
+#img2:hover {
+  -ms-transform: scale(1.1); /* IE 9 */
+  -webkit-transform: scale(1.1); /* Safari 3-8 */
+  transform: scale(1.1); 
+  
+@media screen and (max-width: 580px) {
+  #navbar {
+    padding: 20px 10px !important;
+  }
+  #navbar a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  #navbar-right {
+    float: none;
+  }
+}
+</style>
+</head>
+<body>
+
+<div id="navbar">
+  <a href="index.php" id="logo"><img src="logo.png" alt="logo" id="logoimg"></a>
+  <div id="navbar-right">
+    <a href="housing.php">Housing</a>
+    <a href="#">Banking</a>
+    <a  href="transportation.html">Transportation</a>
+	    <a class="active" href="provincialid.html">Provincial ID's</a>
+		    <a  href="network.html">Network Providers</a>
+			    <a href="faq.php">FAQ</a>
+  </div>
+</div>
+
+<div style="margin-top:138px;">
+
+ <img src="pro_logo.png" alt="Provincial ID BC" height="500px" width="100%" style=" background-size:cover;">
+  </div>
+  <section class="section section-dark">
+  <br>
+  
+  <h1 style=" font-size: 50px;">What is a Provincial ID?</h1>
+  <br>
+  <p style="font-size:20px;">In Canada, provincial driver's licences are the primary form of government-issued photo ID.
+  However, many Canadian residents do not drive and most Canadian provinces produce photo ID cards for Canadians who do not drive.
+  A common feature of these cards is that a valid photo card cannot be held currently with a valid drivers licence. </P>
+   
+   <br>
+  <h2 style="font-size:30px;">British Columbia Service Card </h2>
+	  <br>
+	  
+   <div class="row">
+  <a href="https://www2.gov.bc.ca/gov/content/governments/government-id/bc-services-card" target="_blank">
+		<img src="msp-card.jpg" alt="BC service Card" id="img" height="400" width="600"  >
+  </a>   </div>
+  
+  <br/>
+  
+   <h2 style="font-size:30px;">British Columbia Identity Card </h2>
+	  <br>
+  
+  <div class="row">
+  <a href="https://www2.gov.bc.ca/gov/content/governments/government-id" target="_blank">
+		<img src="bcid.jpg" alt="BC Identity Card" id="img" height="400" width="600"  >
+  </a>   </div>
+  
+  <br>
+  
+   <h2 style="font-size:30px;">British Columbia Driver's License </h2>
+	  <br>
+	  
+  <div class="row">
+  <a href="https://www.icbc.com/driver-licensing/Pages/default.aspx" target="_blank">
+		<img src="driver.png" alt="BC Driver License" id="img" height="400" width="600"  >
+  </a>   </div>
+  
+  <br>
+  
+   <h2 style="font-size:30px;">Social Insuarance Number</h2>
+	  <br>
+  
+  <div class="row">
+  <a href="https://www.canada.ca/en/employment-social-development/services/sin.html" target="_blank">
+		<img src="sin.jpg" alt="SIN number" id="img" height="400" width="600"  >
+  </a>   </div>
+  
+  <br>
+  
+  <h1 style=" font-size: 50px;">Where can I apply?</h1>
+  
+  <br>
+  
+  <p style="font-size:20px;"> You can apply your <strong>BC Service Card, BC ID </strong>
+  and <strong>BC Driver's License</strong> at<strong> ICBC </strong>on Concordia Way Kamloops</p>
+  <br>
+  
+  <a href="https://www.google.ca/maps/place/ICBC+Driver+Licensing/@50.6752547,-120.3410298,13.3z/data=!4m5!3m4!1s0x537e2c8c631ac1cd:0x4f0eff7630eb7051!8m2!3d50.6734263!4d-120.3769236" 
+  target="_blank"><img src="proid.png" alt="ICBC Kamloops" id="img2" height="500" width="700"  ></a>
+
+<br>
+<br>
+ <p style="font-size:20px;"> You can apply your <strong>Social Insuarance Number </strong> at<strong> Service Canada </strong>on Seymour St, Kamloops</p>
+  <br>
+  
+  <a href="https://www.google.ca/maps/place/Service+Canada+Centre/@50.6727806,-120.3242847,17.01z/data=!4m5!3m4!1s0x537e2c54caacbdef:0xea3660e914b9aa1e!8m2!3d50.6750517!4d-120.3289717!4d-120.3769236" 
+  target="_blank"><img src="service.png" alt="Service Canada Kamloops" id="img2" height="500" width="700"  ></a>
+
+<br>
+<br>
+<br>
+
+  </section>
+  
+  
+<section class="section section-light">
+
+  </section>
+<script>
+														//Script for Navigation bar
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    document.getElementById("navbar").style.padding = "10px 10px";
+    document.getElementById("logoimg").style.fontSize = "15px";
+  } else {
+    document.getElementById("navbar").style.padding = "30px 10px";
+    document.getElementById("logoimg").style.fontSize = "25px";
+  }
+}
+</script>
+
+</body>
+</html>

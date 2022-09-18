@@ -1,0 +1,124 @@
+.banner-img{
+	width: 100%;
+	height: 550px;
+	object-fit: cover;
+}
+ 
+.post-que{
+	background-color: #F4F7FA;
+}
+
+h1{
+	text-align: center;
+}
+
+h2{
+	font-size: 30px;
+}
+
+.question{
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.collapsible {
+  background-color: #DDE7FF;
+  //color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+  color: white;
+}
+
+.collapsible:after {
+  content: '\002B';
+  color: black;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  //background-color: #f1f1f1;
+}
+
+.col-4{
+	height: 300px;
+}
+
+.col-8{
+	overflow-x: hidden;
+	overflow-y: auto;
+	height: 300px;
+}
+
+.logo{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	height:298px;
+	object-fit: cover;
+}
+
+.main-heading{
+	text-align: center;
+	background-color: #FFBCD8;
+	color: black;
+	padding: 10px;
+}
+
+form{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #EDF0F7;
+	margin-bottom: 20px;
+	padding: 25px;
+	padding-top: 30px;
+	width: 520px;
+	height: 320px;
+	box-shadow:3px 5px 8px #888888;
+	border-radius: 3px;
+}
+
+input[type=text], input[type=email], textarea{
+	width: 70%;
+	float: right;
+	font-size: 16px;
+	padding: 5px;
+}
+
+
+input[type=submit]{
+	display:block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 80px;
+	padding: 10px;
+	cursor: pointer;
+	border-radius: 2px;
+	border: none;
+	background-color: #4CAF50;
+	color: white;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}

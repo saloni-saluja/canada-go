@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box;}
+
+body { 
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color:#282e34;
+}
+
+#navbar {
+  overflow: hidden;
+  background-color: #060606;
+  padding: 30px 10px;
+  transition: 0.4s;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 99;
+ 
+}
+
+#navbar a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+  opacity: 1;
+}
+
+#navbar #logoimg {
+  width: 250px;
+  font-weight: bold;
+  transition: 0.4s;
+}
+
+#navbar a:hover {
+  background-color: #D05151;
+  color: white;
+}
+
+#navbar a.active {
+  background-color: #CE3434;
+  color: white;
+}
+
+#navbar-right {
+  float: right;
+}
+.section-dark{
+  background-color:#282e34;
+  color:#ddd;
+	text-align: center;
+}
+.section h2{
+background-color:#d05151;
+margin-left:300px;
+margin-right:300px;
+}
+.section p{
+text-align:center;
+margin-left:300px;
+margin-right:300px;
+
+
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  
+}
+.center:hover {
+  box-shadow: 0 0 4px 2px #D05151;
+}
+.section-light{
+  background-color:#D06969;
+  color:#ddd;
+  margin-left:100px;
+  margin-right:100px;
+}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid black;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #ddd;
+  color:#D05151;
+}
+#img{
+padding:20px;
+  }
+  
+  #img:hover {
+  box-shadow: 0 0 4px 2px #D05151;
+}
+
+  #img:hover {
+  box-shadow: 0 0 4px 2px #D05151;
+}
+#img2{
+padding:20px;
+ transition: transform .2s;
+   box-shadow: 0 0 4px 2px grey;
+  }
+  
+#img2:hover {
+  -ms-transform: scale(1.1); /* IE 9 */
+  -webkit-transform: scale(1.1); /* Safari 3-8 */
+  transform: scale(1.1); 
+@media screen and (max-width: 580px) {
+  #navbar {
+    padding: 20px 10px !important;
+  }
+  #navbar a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  #navbar-right {
+    float: none;
+  }
+}
+</style>
+</head>
+<body>
+
+<div id="navbar">
+  <a href="index.php" id="logo"><img src="logo.png" alt="logo" id="logoimg"></a>
+  <div id="navbar-right">
+    <a href="housing.php">Housing</a>
+    <a href="#">Banking</a>
+    <a class="active" href="transportation.html">Transportation</a>
+	    <a href="provincialid.html">Provincial ID's</a>
+		    <a href="network.html">Network Providers</a>
+			    <a href="faq.php">FAQ</a>
+  </div>
+</div>
+
+<div style="margin-top:138px;">
+
+ <img src="t_logo.jpg" alt="transportation" height="500px" width="100%" style=" background-size:cover;">
+  </div>
+  <section class="section section-dark">
+  <h1 style=" font-size: 40px;">Kamloops Tansit</h1>
+  
+    <p>
+ <a href="https://www.bctransit.com/kamloops"> <img src="map.jpg" alt="map" class="center"></a>
+</p>
+<br>
+<h2>STUDENT (POST SECONDARY)</h2>
+  </section>
+<section class="section section-light">
+<p><table>
+  <tr>
+    <th>Cash Fare</th>
+    <th>$2.00</th>
+    <th>For Single Boarding</th>
+  </tr>
+  <tr>
+    <td>Day Pass</td>
+    <td>$4.00</td>
+    <td>Only Available On Bus</td>
+  </tr>
+  <tr>
+    <td>Monthly Pass</td>
+    <td>$30.00</td>
+    <td></td>
+  </tr> 
+  <tr>
+    <td>Semester Pass</td>
+    <td>$100.00</td>
+    <td>Also Available At TRU</td>
+	</tr>
+	</table>
+	</p>
+  </section>
+  <br>
+  <br>
+<section class="section section-dark">
+<p style="font-size:30px; background-color:grey;">Private Buses in Kamloops</p>
+<br>
+<div class="row">
+  <a href="https://www.myebus.ca/bc-schedules?msclkid=eb51e5dae2391d89742fbbbd2a9405a2" target="_blank"><img src="ebus.jpg" alt="Ebus" id="img" height="300" width="300"  ></a>
+  <a href="https://riderexpress.ca/" target="_blank"><img src="rider.jpg" alt="Riders" id="img" height="300" width="300" ></a>
+  </div>
+  <br>
+  <br>
+  <p style="font-size:25px; background-color:grey;">Ebus Office</p>
+ <br>
+ <a href="https://www.google.ca/maps/search/kamloops+ebus/@50.6698292,-120.3540302,14.77z" target="_blank"><img src="ebusmap.png" alt="Ebus" id="img2" height="600" width="600"  ></a>
+    <br>
+  <p style="font-size:25px; background-color:grey;">Rider Express</p>
+  <br>
+  <p>Our Bus Stops at Petro Pass Kamloops</p>
+  <br>
+  
+  <a href="https://www.google.ca/maps/place/Petro-Pass+Kamloops/@50.6655443,-120.3404211,13.53z/data=!4m5!3m4!1s0x537e2b8048bf8c97:0x8e5a423fa4fec3af!8m2!3d50.659286!4d-120.3967528
+" target="_blank"><img src="ridermap.png" alt="Rider Express Location" id="img2" height="600" width="600"  ></a>
+</section>
+<script>
+														//Script for Navigation bar
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    document.getElementById("navbar").style.padding = "10px 10px";
+    document.getElementById("logoimg").style.fontSize = "15px";
+  } else {
+    document.getElementById("navbar").style.padding = "30px 10px";
+    document.getElementById("logoimg").style.fontSize = "25px";
+  }
+}
+</script>
+
+</body>
+</html>
